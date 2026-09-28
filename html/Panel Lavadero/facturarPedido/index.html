@@ -12,7 +12,12 @@
         <p id="pPedido">ID Pedido:</p>
         <input type="text" name="" id="inputPedido">
         <p id="pComprobante">Tipo De Comprobante: </p>
-        <select name="" id="selectComprobante"></select>
+        <select name="" id="selectComprobante">
+            
+            <option value="facturaA">Factura A</option>
+            <option value="FacturaB">Factura B</option>
+            <option value="FacturaC">Factura C</option>
+        </select>
         <p id="pNombre">Nombre/Razon Social: </p>
         <input type="text" name="" id="inputNombre">
         <p id="pIdentificacion">CUIT/CUIL/DNI:</p>
@@ -103,6 +108,16 @@
                 <span>Facturar Pedido</span> 
                 </a> 
             </li> 
+            <li>
+                <a href="../agregarServicio/index.html" class="sidebar-item ">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="M12 8v8"/>
+                        <path d="M8 12h8"/>
+                    </svg>
+                    <span>Agregar Servicio</span>
+                </a>
+            </li>
         </ul> 
         <a href="login.html" class="sidebar-item sidebar-logout" aria-label="Cerrar sesión"> 
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2"> 
