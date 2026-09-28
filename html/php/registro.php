@@ -1,4 +1,3 @@
-
 <?php
 
 $conexion = new mysqli(
@@ -15,22 +14,23 @@ if ($conexion->connect_error) {
 $contraseña = trim($_POST["password"]);
 $dni = trim($_POST["Dni"]);
 $email = trim($_POST["email"]);
-$rol  = trim($_POST["rol"]);
+$rol = trim($_POST["rol"]);
 
-if ($rol != "Usuario" && $rol != "Lavandero" && $rol != "Repartidor") {
+if (!preg_match('/^[0-9]{8}$/', $dni)) {
     ?>
     <script>
-    alert("Debe seleccionar una opción");
-    window.location = "registro.html";
+       alert("dni distintas cifras");
+        window.location = "registro.html";
     </script>
     <?php
     exit();
+     
+   
 }
-
 
 $sql = "INSERT INTO usuarios
 (email,dni,rol,contraseña)
-VALUES (?, ?, ?,?)";
+VALUES (?, ?, ?, ?)";
 
 $stmt = $conexion->prepare($sql);
 
@@ -53,13 +53,11 @@ try {
 
     if ($e->getCode() == 1062) {
 
-        echo "Ese dni ya existe";
+        echo "gmail o dni ya en uso";
 
     } else {
 
-       
         echo "Error de MySQL: " . $e->getMessage();
 
     }
 }
-
