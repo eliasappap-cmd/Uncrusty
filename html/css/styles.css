@@ -1092,11 +1092,7 @@ input:focus {
   color: var(--text-primary);
 }
  
-.sidebar-item.active {
-  background: var(--surface-highlight);
-  color: var(--primary-hover);
-  font-weight: 500;
-}
+
  
 .sidebar-logout {
   margin-top: auto;
@@ -1188,10 +1184,10 @@ input:focus {
 }
  
 .cart-sheet {
-  position: absolute;
-  left: 0px;
-  right: 50;
-  bottom: 750;
+  position:fixed;
+  left: 100px;
+  right: 0;
+  bottom: 600;
   max-width: 480px;
   max-height: 80%;
   margin: 0 auto;
@@ -1324,7 +1320,7 @@ input:focus {
   font-size: 15px;
   text-align: center;
 }
-
+/* CONFIRMAR PAGO*/
 .horarios {
     display: grid;
 
@@ -1384,3 +1380,20 @@ input:focus {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
 
 }
+/*CERCA DE TI*/
+.mapa{
+  display: flex;
+  border-color: #1A86C4;
+  border-radius: 16px;
+  width: 600px;
+  margin: 100px auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.cercaTexto{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
