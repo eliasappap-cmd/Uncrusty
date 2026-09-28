@@ -1,0 +1,126 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Factura</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="cardPago">
+        <p class="subtitle">
+            Seleccione un dia para que pasen a buscar su pedido
+        </p>
+            
+            <div class="textPago">
+                <h2>Elija una fecha</h2>
+                <input
+                    type="date"
+                    name="fecha"
+                    required
+                >
+            </div>
+
+            <div class="seccion">
+
+                <h2> Elija un horario</h2>
+
+                <div class="horarios">
+
+                    <label>
+                        <input type="radio" name="hora" value="08:00" required>
+                        <span>08:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="08:30">
+                        <span>08:30</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="9:00">
+                        <span>09:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="9:30">
+                        <span>09:30</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="10:00">
+                        <span>10:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="10:30">
+                        <span>10:30</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="11:00">
+                        <span>11:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="11:30">
+                        <span>11:30</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="12:00">
+                        <span>12:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="12:30">
+                        <span>12:30</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="13:00">
+                        <span>13:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="13:30">
+                        <span>13:30</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="14:00">
+                        <span>14:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="14:30">
+                        <span>14:30</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="15:00">
+                        <span>15:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="hora" value="15:30">
+                        <span>15:30</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+                <div class ="pagoTotal">
+                    <h1 class ="pagoTotal" id ="precio"> Total $$$ </h1>
+        <!aca iria el php para que muestre el precio desed la base de datos>
+        </div>
+
+        <div class = "continuarPago">
+            <a href = "confirmacionCliente.html">
+            <button class = "btn-primary">continuar</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
