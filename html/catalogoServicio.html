@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -7,8 +6,35 @@
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="app-body">
+<aside class="sidebar">
+  <ul class="sidebar-nav">
+    <li><a href="inicio.html" class="sidebar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+      <span>Inicio</span>
+    </a></li>
+    <li><a href="catalogoServicio.html" class="sidebar-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2"/></svg>
+      <span>Catálogo</span>
+    </a></li>
+    <li><a href="pedidos.html" class="sidebar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 7L12 3 4 7v10l8 4 8-4V7z"/><path d="M4 7l8 4 8-4"/><path d="M12 11v10"/></svg>
+      <span>Pedidos</span>
+    </a></li>
+    <li><a href="mapa.html" class="sidebar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span>Mapa</span>
+    </a></li>
+    <li><a href="historial.html" class="sidebar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <span>Historial</span>
+    </a></li>
+  </ul>
+  <a href="login.html" class="sidebar-item sidebar-logout" aria-label="Cerrar sesión">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+  </a>
+</aside>
 <div class="app-shell">
-
+ 
   <header class="app-header">
     <h1>Catálogo de servicios</h1>
     <div class="field search-box" style="margin-bottom: 0;">
@@ -19,7 +45,7 @@
       <input type="text" id="search-input" placeholder="Buscar prenda o servicio" aria-label="Buscar prenda o servicio">
     </div>
   </header>
-
+ 
   <nav aria-label="Categorías">
     <ul class="chips" id="chips">
       <li><button type="button" class="chip active" data-category="todos">Todos</button></li>
@@ -29,9 +55,9 @@
       <li><button type="button" class="chip" data-category="especiales">Especiales</button></li>
     </ul>
   </nav>
-
+ 
   <ul class="service-list" id="service-list">
-
+ 
     <li class="service-item" data-category="ropa" data-name="Camisa" data-price="2200">
       <div class="service-info">
         <p class="service-name">Camisa</p>
@@ -40,7 +66,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Camisa">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="ropa" data-name="Pantalón" data-price="2500">
       <div class="service-info">
         <p class="service-name">Pantalón</p>
@@ -49,7 +75,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Pantalón">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="ropa" data-name="Traje completo" data-price="6800">
       <div class="service-info">
         <p class="service-name">Traje completo</p>
@@ -58,7 +84,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Traje completo">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="ropa" data-name="Vestido" data-price="4200">
       <div class="service-info">
         <p class="service-name">Vestido</p>
@@ -67,7 +93,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Vestido">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="ropa" data-name="Campera" data-price="5200">
       <div class="service-info">
         <p class="service-name">Campera</p>
@@ -76,25 +102,25 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Campera">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="hogar" data-name="Cortina" data-price="3200">
       <div class="service-info">
         <p class="service-name">Cortina</p>
-        <p class="service-detail">Lavado y planchado — por m²</p>
+        <p class="service-detail">Lavado y planchado</p>
         <p class="service-price">$3.200</p>
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Cortina">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="hogar" data-name="Alfombra" data-price="4800">
       <div class="service-info">
         <p class="service-name">Alfombra</p>
-        <p class="service-detail">Lavado profundo — por m²</p>
+        <p class="service-detail">Lavado profundo</p>
         <p class="service-price">$4.800</p>
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Alfombra">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="hogar" data-name="Acolchado" data-price="7500">
       <div class="service-info">
         <p class="service-name">Acolchado</p>
@@ -103,7 +129,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Acolchado">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="hogar" data-name="Juego de sábanas" data-price="3900">
       <div class="service-info">
         <p class="service-name">Juego de sábanas</p>
@@ -112,7 +138,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Juego de sábanas">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="calzado" data-name="Zapatillas" data-price="3500">
       <div class="service-info">
         <p class="service-name">Zapatillas</p>
@@ -121,7 +147,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Zapatillas">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="calzado" data-name="Zapatos de cuero" data-price="4200">
       <div class="service-info">
         <p class="service-name">Zapatos de cuero</p>
@@ -130,7 +156,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Zapatos de cuero">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="especiales" data-name="Quitamanchas" data-price="1500">
       <div class="service-info">
         <p class="service-name">Quitamanchas</p>
@@ -139,7 +165,7 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Quitamanchas">+</button></div>
     </li>
-
+ 
     <li class="service-item" data-category="especiales" data-name="Planchado express" data-price="1200">
       <div class="service-info">
         <p class="service-name">Planchado express</p>
@@ -148,21 +174,40 @@
       </div>
       <div class="item-action"><button type="button" class="add-btn" aria-label="Agregar Planchado express">+</button></div>
     </li>
-
+ 
   </ul>
-
+ 
   <p class="empty-state" id="empty-state">No encontramos servicios con ese nombre.</p>
-
+ 
 </div>
-
+ 
 <div class="cart-bar" id="cart-bar" role="status">
   <div>
     <p class="cart-count" id="cart-count">0 prendas seleccionadas</p>
-    <p class="cart-total" id="cart-total">$0</p>
+    <p class="cart-total" id="">$0</p>
   </div>
-  <button type="button" class="btn-primary" id="continue-btn">Ver presupuesto</button>
+  <button type="button" class="btn-primary" id="cart-open">Ver carrito</button>
 </div>
-
+ 
+<div class="cart-overlay" id="cart-overlay"></div>
+<section class="cart-sheet" id="cart-sheet" aria-label="Carrito" aria-hidden="true">
+  <div class="cart-sheet-header">
+    <h2>Tu pedido</h2>
+    <button type="button" class="cart-close" id="cart-close" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <ul class="cart-lines" id="cart-lines"></ul>
+  <p class="cart-empty" id="cart-empty">Todavía no agregaste nada.</p>
+  <div class="cart-sheet-footer">
+    <div class="cart-sheet-total">
+      <span>Total estimado</span>
+      <strong id="cart-sheet-total">$0</strong>
+    </div>
+    <a href="pagoCliente.html">
+    <button type="button" class="btn-primary" id="sheet-continue" ">Continuar</button>
+    </a>
+  </div>
+</section>
+ 
 <script src="catalogo.js"></script>
 </body>
 </html>
