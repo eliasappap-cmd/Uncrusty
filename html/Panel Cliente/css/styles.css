@@ -1600,4 +1600,21 @@ input:focus {
   .tabla-pedidos td.ubicacion:empty {
     display: none;
   }
+
+}
+
+  /*ESTREALLAS*/
+.estrellas-lectura {
+  display: inline-flex;
+  gap: 2px;
+}
+ 
+.estrellas-lectura .estrella {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--border-strong);
+}
+ 
+.estrellas-lectura .estrella.llena {
+  color: var(--amber-text);
 }
