@@ -8,7 +8,7 @@
 </head>
 <body>
 <main>
-  <form class="card" id="registro-form" action ="megustaelepe.php" method = "POST" novalidate>
+  <form class="card" id="registro-form" action ="registro.php" method = "POST" novalidate>
     <div class="icon" aria-hidden="true">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A86C4" stroke-width="1.8">
         <circle cx="12" cy="12" r="7"/>
@@ -17,7 +17,7 @@
     </div>
  
     <h1>Registro</h1>
-    <p class="subtitle">Crea tu cuenta según tu rol: cliente, personal o repartidor</p>
+    <p class="subtitle">Accedé según tu rol: cliente, personal o repartidor</p>
  
     <div class="field">
       <label for="email">Correo electrónico</label>
@@ -32,10 +32,10 @@
 
   <div class="select">
       <label for="role">Elija su rol</label>
-      <select for="role">
-      <option value="usuario">Usuario</option>
-      <option value="repartidor">Repartidor</option>
-      <option value="lavandero">Lavandero</option>
+      <select for="role" name = "rol">
+      <option value="Usuario">Usuario</option>
+      <option value="Repartidor">Repartidor</option>
+      <option value="Lavandero">Lavandero</option>
       </select>
     </div>
  
